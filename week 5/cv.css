@@ -1,0 +1,35 @@
+ 
+ul {
+    margin: 20px;
+}
+h1 {
+    margin: 10px
+}
+h2 {
+    margin: 10px
+
+}
+
+p { 
+    margin: 20px;
+    text-align: left;
+}
+img {
+    width: 50%;
+    border-radius: 40%;
+    display: block;
+    margin: 0 auto
+}
+table, td, tr, th {
+    border: 1px solid #000000;
+}
+.bold {
+    font-weight: bold;
+    text-align: center;
+    }
+.result { td 
+    { width: 400px;
+    text-align: right;
+    padding-right: 5px; }
+    padding-left: 5px;
+}
