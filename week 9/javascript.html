@@ -1,0 +1,46 @@
+<!-- phần cuối khi có định dạng của charm, thực thi trên máy ng dùng 
+ -> đưa ra gợi ý, kiển tra hd ng dùng
+ dùng thẻ script để gắn vào html trực tiếp 
+ file ngoài: suộc src (css cũng thế)
+ vị trí: head or sau footer
+ có đủ thành phần của ngôn ngữ lập trình -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>Javascript Example</h1> 
+    <form action="">
+        <!-- atribute: type=number value: id= -->
+        <input type="number" id="number1" placeholder="Enter first number">
+        <br>
+        <input type="number" id="number2" placeholder="Enter second number">
+        <br>
+        <button id="button1" onclick="add();"> Submit </button>
+        <!-- onclick để cho ra kq -->
+    </form>
+
+
+    <script>
+        // getelementbyid: dom
+        function add () {
+            const a = parseInt(document.getElementById('number1').value);
+            const b = parseInt(document.getElementById('number2').value);
+            if(isNaN(a) || isNaN(b)) {
+                alert("Please enter valid number for the first input");
+                return;
+
+            }
+            alert("The sum is: " + (a + b));
+        }
+        function addNumbers(){
+            const num1 = parseInt(document.getElementById('number1').value);
+            const num2 = parseIntInt(document.getElementById('number2').value);
+            alert("The sum is: " + (num1 + num2));
+        }
+    </script>
+ </body>
+ </html>
